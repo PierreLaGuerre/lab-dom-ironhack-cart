@@ -1,0 +1,45 @@
+/* identify an element
+let theCatDiv = document.getElementById("cat");
+
+// modify an element on DOM with innerHTML method
+theCatDiv.innerHTML= 'Felin';
+
+// modify elements attribute and content
+theCatDiv.style.backgroundColor = "red";
+theCatDiv.style.border = "2px green solid";
+theCatDiv.style.fontSize = "50px";
+theCatDiv.style.marginTop = "30px";
+theCatDiv.style.paddingBottom = "30px";
+
+// create elements, assign a value on DOM & use appendChild to appear 
+let h2Tag = document.createElement("h2");
+h2Tag.innerHTML = "Elephant";
+let parent = document.getElementsByTagName("body")[0];
+parent.appendChild(h2Tag);
+
+// create text node method
+let text = document.createTextNode("This text is created dynamically  ");
+parent.appendChild(text);
+
+// clear content by set an empty string as value with innerHTML method
+let contentDiv = document.getElementById("content");
+contentDiv.innerHTML = "";
+
+// assign an event to DOM element (on click)
+let button = document.getElementById("add-item-button");
+button.onclick = function () {
+    theCatDiv.style.backgroundColor = "blue";
+  };
+
+// addEventListener method  
+  const btn = document.querySelector('#btn');
+btn.addEventListener('click', () => {
+  alert("Hello World");
+});
+
+// addEventListener + function sintax
+function alertFunction() {
+    alert("YAY! YOU DID IT!");
+  }
+  btn.addEventListener('click', alertFunction);
+  */
